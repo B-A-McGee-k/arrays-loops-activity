@@ -6,9 +6,12 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
+let hobbies = ['basketball', 'sleep', 'food'];
+for (let myday = 0; myday <= 2; myday++) {
+     console.log(hobbies[myday]);
+}
 
-
-// Example output
+// Example output 
 // 1. swimming
 // 2. board games
 // 3. painting
@@ -25,21 +28,41 @@
  * 4. Output the array and number of times teal was found
  */
 
+let colors = ['teal', 'red', 'teal', 'blue'];
 
-// Example output
-// green, red, teal, orange, teal
-// Teal was found 2 times
+let tealCount = 0;
 
+for (let color of colors) {
+     console.log(color);
+     if (color === 'teal'){
+          tealCount++;
+     }
+} 
+console.log(tealCount);
 
-/**
- * #3 Even & Odd
- * -------------
- * 1. Create an array of numbers (at least 5 numbers)
- * 2. Create variables oddNumbers and evenNumbers (empty arrays)
- * 3. Write a loop that puts all the odd numbers in the oddNumbers 
- *    array and even numbers in the evenNumbers array.
- * 4. Output the original array, odd number array and even number array
- */
+let redCount = 0;
+
+// Are we both here?
+// #3 Even & Odd (missing question?)
+
+let nums = [1, 2, 3, 4, 5, 34975, -38]
+
+// These are accumulators
+let oddNums = [];
+let evenNums = [];
+
+//I need a loop, one for nums, one for adding to odds or evens (if odd/even __)
+
+for (let num of nums) {
+     if (num % 2 === 0) {
+          evenNums.push(num);
+     } else {
+          oddNums.push(num);
+     }
+}
+
+console.log(evenNums);
+console.log(oddNums);
 
 
 // Example output
